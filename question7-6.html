@@ -27,17 +27,19 @@
                 border-radius: 50%;
                 transform: scale(0.9);
             }
-        .star {
+        .car {
+            background-color: #b3f5f3;
             border: 0;
-            top: 400px;
-            color:#618786;
-            background-color: transparent;
+            top: 365px;
+            cursor: pointer;
+            border-radius: 50%;
+            color:#fff;
         }
-            .star:hover {
-                top: 410px;
+            .car:hover {
+                top: 370px;
+                background-color: #fff;
                 transform: scale(1.2);
                 color:#618786;
-                background-color: transparent;
             }
         
     </style>
@@ -47,7 +49,8 @@
     <section id="toptop">
         <div  style="background-color:#b3f5f3;  width:1500px; height:250px; ">
             <div class="col-md-12" >
-                <b style="color: #fff; top: 80px; left:150px; position: absolute; font-size: 60px;">可查看長輩或監督看護是否用心照顧的軟體</b>
+                <b style="color: #fff; top: 60px; left:150px; position: absolute; font-size: 50px;">若是安裝「查看長輩或監督看護是否用心照顧的軟體」後，</b>
+                <b style="color: #fff; top: 120px; left:150px; position: absolute; font-size: 50px;">您會比較放心長輩讓看護照顧嗎?</b>
              </div>
          </div>
     </section>
@@ -56,54 +59,30 @@
         <div class="white" >        
             <div class="answer">
                 <div class="option1">
-                    <button class="star 1" name="button_star1" 
-                            style=" font-size: 20pt; left: 300px;  position: absolute; font-weight:600; ">
-                            <img src="http://lin-afu.github.io/picture/star_empty.png" 
-                                 onmouseover="this.src='https://lin-afu.github.io/picture/star.png';" 
-                                 onmouseout="this.src='https://lin-afu.github.io/picture/star_empty.png';" width= "100px" height= "100px">
-                            <p>1</p>
+                    <button class="car buy" name="button_carbuy" 
+                            style=" font-size: 20pt; left: 250px;  position: absolute; font-weight:600; width: 250px; height: 250px; padding:40px 10px 10px; ">
+                            <img src="https://lin-afu.github.io/picture/yes.png" class="img-fluid" width= "150px" height= "150px" >
+                            <p>會</p>
                     </button>
                 </div>
                 <div class="option2">
-                    <button class="star 2" name="button_star2" 
-                            style=" font-size: 20pt; left: 500px;  position: absolute; font-weight:600; " >
-                            <img src="http://lin-afu.github.io/picture/star_empty.png" 
-                                 onmouseover="this.src='https://lin-afu.github.io/picture/star.png';" 
-                                 onmouseout="this.src='https://lin-afu.github.io/picture/star_empty.png';" width= "100px" height= "100px">
-                            <p>2</p>
+                    <button class="car maybe" name="button_carmaybe" 
+                            style=" font-size: 20pt; left: 600px;  position: absolute; font-weight:600; width: 250px; height: 250px; padding:40px 10px 10px;" >
+                            <img src="https://lin-afu.github.io/picture/maybe.png" class="img-fluid" width= "150px" height= "150px" >
+                            <p>可能會</p>
                     </button>
                 </div>
                 <div class="option3">
-                    <button class="star 3" name="button_star3" 
-                            style=" font-size: 20pt; left: 700px;  position: absolute; font-weight:600; " >
-                            <img src="http://lin-afu.github.io/picture/star_empty.png" 
-                                 onmouseover="this.src='https://lin-afu.github.io/picture/star.png';" 
-                                 onmouseout="this.src='https://lin-afu.github.io/picture/star_empty.png';" width= "100px" height= "100px">
-                            <p>3</p>
-                    </button>
-                </div>
-                <div class="option4">
-                    <button class="star 4" name="button_star4" 
-                            style=" font-size: 20pt; left: 900px;  position: absolute; font-weight:600; " >
-                            <img src="http://lin-afu.github.io/picture/star_empty.png" 
-                                 onmouseover="this.src='https://lin-afu.github.io/picture/star.png';" 
-                                 onmouseout="this.src='https://lin-afu.github.io/picture/star_empty.png';" width= "100px" height= "100px">
-                            <p>4</p>
-                    </button>
-                </div>
-                <div class="option5">
-                    <button class="star 5" name="button_star5" 
-                            style=" font-size: 20pt; left: 1100px;  position: absolute; font-weight:600; " >
-                            <img src="http://lin-afu.github.io/picture/star_empty.png" 
-                                 onmouseover="this.src='https://lin-afu.github.io/picture/star.png';" 
-                                 onmouseout="this.src='https://lin-afu.github.io/picture/star_empty.png';" width= "100px" height= "100px">
-                            <p>5</p>
+                    <button class="car nobuy" name="button_carnobut" 
+                            style=" font-size: 20pt; left: 950px;  position: absolute; font-weight:600; width: 250px; height: 250px; padding:40px 10px 10px;" >
+                            <img src="https://lin-afu.github.io/picture/no.png" class="img-fluid" width= "150px" height= "150px" >
+                            <p>不會</p>
                     </button>
                 </div>
             </div>
             <div class="next">
                 <button class="btn_next" name="button_next"
-                    style="font-size: 25pt; left: 1285px;  position: absolute;  font-weight:600; " onclick="javascript:location.href='https://lin-afu.github.io/question8.html'">
+                    style="font-size: 25pt; left: 1285px;  position: absolute;  font-weight:600; " onclick="javascript:location.href='https://lin-afu.github.io/question4.html'">
                     N E X T
                 </button>
             </div>
