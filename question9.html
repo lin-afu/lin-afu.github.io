@@ -7,22 +7,13 @@
     <title>使用科技產品照顧銀髮族之市場調查 </title>
     
     <script language="javascript">
-        document.getElementById("text1").onkeypress = function(e){
-            checkChar(e);
+        text1.onkeyup=function(){
+            var re=/^[a-zA-Z0-9]*$/;
+            if(!re.test(this.value)){
+                alert("請勿輸入特殊字元");
+                this.value=this.value.substr(0,this.value.length-1);
+            }
         }
-
-        function checkChar(e){
-             e = window.event || e;
-             var code = e.keyCode || e.which;
-             var reg = /[\\\/:\*\?"\<\>\|]/;
-             if(reg.test(String.fromCharCode(code))){
-                if(window.event){
-                    e.returnValue = false;
-                }else{
-                    e.preventDefault();
-                }
-             }
-         }
     </script>
     
     <style type="text/css">
@@ -78,14 +69,14 @@
             <div class="question">
                 <div class="col-md-12" >
                     <div class="intro_text" style=" font-weight:500">
-                        <div class="text1" style="color: #b3f5f3; top: 100px; left:450px; position: absolute; font-size: 40px;">「智慧輔助盒子」的功能，有幫助到您照顧長輩嗎?</div>
-                        <div class="text3" style="color: #b3f5f3; top: 160px; left:450px; position: absolute; font-size: 40px;">可以列出您認為的優缺點。</div>   
-                        <div class="text3" style="color: #b3f5f3; top: 170px; left:900px; position: absolute; font-size: 20px;">(限300字以內，請勿使用特殊字元)</div>
+                        <div class="text1" style="color: #618786; top: 100px; left:450px; position: absolute; font-size: 40px;">「智慧輔助盒子」的功能，有幫助到您照顧長輩嗎?</div>
+                        <div class="text3" style="color: #618786; top: 160px; left:450px; position: absolute; font-size: 40px;">可以列出您認為的優缺點。</div>   
+                        <div class="text3" style="color: #618786; top: 180px; left:950px; position: absolute; font-size: 20px;">(限300字以內，請勿使用特殊字元)</div>
                     </div>
                 </div>
             </div>
             <div class="answer">
-                <textarea  id="text1" maxlength="10" style="top: 300px; left:500px; position: absolute; width:600px; height:300px; font-size: 25px;"></textarea>
+                <textarea  id="text1" maxlength="10" style="top: 280px; left:500px; position: absolute; width:700px; height:300px; font-size: 25px; border: 2px #618786 double;"></textarea>
             </div>
             <div class="next">
                 <button class="btn_next" name="button_next"
