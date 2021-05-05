@@ -81,7 +81,7 @@
                 <textarea  id="textin" class="textinin" maxlength="10"></textarea>
                 <script language="javascript">
                     textin.onkeyup=function(){
-                        var re=/[\\\/:\*\?"\<\>\|]/;
+                        var re=/[\\\/:\*=\+-\_\@\#\$\%\^\&\*\{\{\<\>\|]/;
                         if(re.test(this.value)){
                             alert("請勿輸入特殊字元");
                             this.value=this.value.substr(0,this.value.length-1);
