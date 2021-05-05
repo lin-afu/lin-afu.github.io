@@ -53,15 +53,7 @@
     
     <script>
         var textin = document.getElementById("textin");
-        textin.addEventListener(
-            'keypress',
-            function (e) {
-                if (e.keyCode == 60) {
-                    alert('請勿輸入特殊符號');
-                    e.preventDefault();
-                }
-            }
-        );
+        textin.addEventListener('keypress',function (e) {if (e.keyCode == 60) { alert('請勿輸入特殊符號');e.preventDefault();}});
     </script>
     
 </head>
