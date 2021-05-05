@@ -51,10 +51,7 @@
         
     </style>
     
-    <script>
-        var textin = document.getElementById("textin");
-        textin.addEventListener('keypress',function (e) {if (e.keyCode == 60) { alert('請勿輸入特殊符號');e.preventDefault();}});
-    </script>
+    
     
 </head>
 
@@ -82,6 +79,10 @@
             </div>
             <div class="answer">
                 <textarea  id="textin" class="textinin" maxlength="10"></textarea>
+                <script>
+                    var textin = document.getElementById("textin");
+                    textin.addEventListener('keypress',function (e) {if (e.keyCode == 60) { alert('請勿輸入特殊符號');e.preventDefault();}});
+                </script>
             </div>
             <div class="next">
                 <button class="btn_next" name="button_next"
