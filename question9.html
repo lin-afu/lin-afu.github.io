@@ -39,12 +39,21 @@
                   background-color: #577b82;
                   cursor: pointer;
               }
+        .textinin{
+            top: 350px; 
+            left:500px; 
+            position: absolute; 
+            width:700px; 
+            height:300px; 
+            font-size: 25px; 
+            border: 2px #618786 solid; 
+        }
         
     </style>
     
     <script>
-        var text1 = document.getElementById("text1");
-        text1.addEventListener(
+        var textin = document.getElementById("textin");
+        textin.addEventListener(
             'keypress',
             function (e) {
                 if (e.keyCode == 60) {
@@ -80,8 +89,7 @@
                 </div>
             </div>
             <div class="answer">
-                <textarea  id="text1" maxlength="10" 
-                          style="top: 350px; left:500px; position: absolute; width:700px; height:300px; font-size: 25px; border: 2px #618786 solid; "></textarea>
+                <textarea  id="textin" class="textinin" maxlength="10"></textarea>
             </div>
             <div class="next">
                 <button class="btn_next" name="button_next"
