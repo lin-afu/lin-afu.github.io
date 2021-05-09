@@ -1,54 +1,70 @@
 ﻿<!DOCTYPE html>
 <html>
-
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
     <title>使用科技產品照顧銀髮族之市場調查 </title>
-    <style type="text/css">
-        button {
+	
+	<style>
+		.wrap{
+		  max-width: 100%;
+		}
+		.headline{
+			color: #ffffff;
+			width: 60%;
+			top: 25%;
+			left:2%; 
+			position:absolute; 
+			font-size: 4vw;
+		}
+		.start_circle{
+			max-height: 80%;  
+			max-width: 50%; 
+			width: 41vw;
+			height: 40vw;
+			position:fixed;
+			bottom:0%; 
+			right:0%;
+		}
+	
+		.start_btn {
+			height:15vw;
+			width:15vw;
+			font-size: 2vw; 
+			font-weight:600;
+			bottom: 10vw; 
+			right: 10vw;  
+			position: absolute;
+		
             border: 0;
             background-color: #b3f5f3;
             color: #577b82;
-            border-radius: 10px;
             cursor: pointer;
             border-radius: 50%;
-            box-shadow : 10px 10px 10px #577b82;
+            box-shadow : 10px 1rem 1rem #577b82;
         }
-            button:hover {
+            .start_btn:hover {
                 color: #b3f5f3;
                 background-color: #618786;
                 border-radius: 50%;
                 transform: scale(0.9);
             }
-    </style>
+		
+	</style>
 </head>
 
-<body style="background-color: #b3f5f3; width:500px; height:400px; overflow: hidden;">
-    <section id="intro">
-        <div class="container">
-            <div class="col-md-12"
-                style="color: #ffffff; top: 190px; left:100px; position: absolute; font-size: 60px; ">
-                <b>使 用 科 技 產 品 照 顧 銀 髮 族</b>
-                <p></p>
-                <b>之 市 場 調 查</b>
-            </div>
+<body style="background-color: #b3f5f3;">
+	<div class="wrap">
+		<div class="headline" >
+            <b>使 用 科 技 產 品 照 顧 銀 髮 族</b>
+            <p></p>
+            <b>之 市 場 調 查</b>
         </div>
-    </section>
-    <section id="one">
+		
+		<img src="https://lin-afu.github.io/picture/start_circle.png" class="start_circle">
         <div>
-            <img src="https://lin-afu.github.io/picture/start_circle.png" class="img-fluid" alt="start_circle" width="620" height="620" 
-                style=" position:absolute; top:170px; left:900px;">
-            <div>
-                <div class="start">
-                    <button id="btn" name="button_start"
-                        style="width: 250px; height: 250px; font-size: 30pt; top: 400px; left: 1120px;  position: absolute;  font-weight:900" onclick="javascript:location.href='https://lin-afu.github.io/introduce.html'">
-                        開 始
-                    </button>
-                </div>
-                
-            </div>
+            <input type="button" class="start_btn" value="開 始" onclick="javascript:location.href='https://lin-afu.github.io/introduce.html'">              
         </div>
-    </section>
+	</div>
 </body>
 </html>
