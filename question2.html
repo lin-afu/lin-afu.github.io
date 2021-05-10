@@ -7,101 +7,103 @@
     <title>使用科技產品照顧銀髮族之市場調查 </title>
 
     <style type="text/css">
-        button.btn_next {
+	
+	
+	
+	
+        .wrap{
+			max-width: 100%;
+		}
+		.headline{
+			color: #ffffff;
+			top: 25%;
+			left: 7%;
+			position: absolute;
+			font-size: 4vw;
+		}
+		.page_circle{
+			max-height: 100%;  
+			max-width: 90%; 
+			min-width:90%;
+			min-height: 100%;
+			width: 150vh;
+			height: 100vh;
+			position:fixed;
+			bottom:0%; 
+			right:0%;
+		}
+		.age_btn{
+			font-size: 1.5vw;
+			height: 6vw;
+			width: 17vw;
+		
             border: 0;
-            top: 615px;
-            width: 150px; 
-            height: 80px;
+            color:  #577b82;
+            background-color: #b3f5f3;
+            cursor: pointer;
+			position: absolute;
+			font-weight:600;
+        }
+            .age_btn:hover{
+                  color: #fff;
+                  background-color: #577b82;
+                  cursor: pointer;
+              }
+		.next_btn {
+			min-height:8vh;
+			min-width:15vh;
+			font-size: 2vw;
+			width: 10vw; 
+            height: 5vw;
+			right: 3vw;
+			bottom: 5vw;
+			position: absolute;
+			font-weight:600;
+			
+            border: 0;
             background-color: #b3f5f3;
             color: #577b82;
             cursor: pointer;
             border-radius: 10%;
-            box-shadow : 10px 10px 10px #577b82;
+            box-shadow : 10px 1rem 1rem #577b82;
         }
-            button.btn_next:hover {
-                top: 580px;
-                width: 150px; 
-                height: 150px;
+            .next_btn:hover {
+				min-height:10vh;
+				min-width:10vh;
+                bottom: 2.5vw;
+                width: 10vw; 
+                height: 10vw;
                 color: #b3f5f3;
                 background-color: #618786;
                 border-radius: 50%;
                 transform: scale(0.9);
             }
-        .age{
-            border: 0;
-            top: 320px;
-            color:  #577b82;
-            background-color: #b3f5f3;
-            cursor: pointer;
-        }
-            .age:hover{
-                  color: #fff;
-                  background-color: #577b82;
-                  cursor: pointer;
-              }
-        
     </style>
 </head>
 
-<body style="background-color: #b3f5f3; width:500px; height:400px; overflow: hidden;">
-    <section id="headline">
-        <div class="container">
-            <div class="col-md-12"
-                style="color: #ffffff; top: 190px; left:100px; position: absolute; font-size: 60px; ">
-                <b>年齡</b>
-            </div>
+<body style="background-color: #b3f5f3;">
+    <div class="wrap">
+        <div class="headline" >
+            <b>年齡</b>
         </div>
-    </section>
-    <section id="one">
-        <div class="backgroung">
-            <img src="https://lin-afu.github.io/picture/page_circle.png" class="img-fluid" alt="start_circle" width="1300" height="1300"
-                 style=" position:absolute; top:0px; left:200px;">
+    
+        <img src="https://lin-afu.github.io/picture/page_circle.png" class="page_circle">
             
-            <div class="answer">
-                <div class="option20">
-                    <button class="age 20" name="button_20" 
-                            style=" font-size: 20pt; left: 390px;  position: absolute; font-weight:600; width: 180px; height: 70px; border-radius: 30% 0 0 30%;">
-                             2 0 以 下
-                    </button>
-                </div>
-                <div class="option30">
-                    <button class="age 30" name="button_30" 
-                            style=" font-size: 20pt; left: 570px;  position: absolute; font-weight:600; width: 170px; height: 70px;" >
-                            2 1 ~ 3 0
-                    </button>
-                </div>
-                <div class="option40">
-                    <button class="age 40" name="button_40" 
-                            style=" font-size: 20pt; left: 740px;  position: absolute; font-weight:600; width: 170px; height: 70px;" >
-                            3 1 ~ 4 0
-                    </button>
-                </div>
-                <div class="option50">
-                    <button class="age 50" name="button_50" 
-                            style=" font-size: 20pt; left: 910px;  position: absolute; font-weight:600; width: 170px; height: 70px;" >
-                            4 1 ~ 5 0
-                    </button>
-                </div>
-                <div class="option60">
-                    <button class="age 60" name="button_60" 
-                            style=" font-size: 20pt; left: 1080px;  position: absolute; font-weight:600; width: 170px; height: 70px;" >
-                            5 1 ~ 6 0
-                    </button>
-                </div>
-                <div class="option66">
-                    <button class="age 66" name="button_66" 
-                            style=" font-size: 20pt; left: 1250px;  position: absolute; font-weight:600; width: 180px; height: 70px; border-radius: 0 30% 30% 0 ;" >
-                             6 1 以 上
-                    </button>
-                </div>
-            </div>
-            <div class="next">
-                <button class="btn_next" name="button_next"
-                    style="font-size: 25pt; left: 1285px;  position: absolute;  font-weight:600; " onclick="javascript:location.href='https://lin-afu.github.io/question3.html'">
-                    N E X T
-                </button>
-            </div>
+        <div class="answer">
+			<input type="button" class="age_btn 20" name="button_20" value="2 0 以 下" style=" left: 33.2%; top: 30%; border-radius: 40% 0 0 40%;">
+			<input type="button" class="age_btn 30" name="button_30" value="2 1 ~ 3 0" style=" left: 50%; top: 30%;">
+			<input type="button" class="age_btn 40" name="button_40" value="3 1 ~ 4 0" style=" left: 67%; top: 30%; border-radius: 0 40% 40% 0 ;">
+			<input type="button" class="age_btn 50" name="button_50" value="4 1 ~ 5 0" style=" left: 33.2%; top: 55%; border-radius: 40% 0 0 40%;"">
+			<input type="button" class="age_btn 60" name="button_60" value="5 1 ~ 6 0" style=" left: 50%; top: 55%;">
+			<input type="button" class="age_btn 66" name="button_66" value="6 1 以 上" style=" left: 67%; top: 55%; border-radius: 0 40% 40% 0 ;">
+			
+			
         </div>
-    </section>
+		
+        <div>
+			<input type="button" class="next_btn" value="N E X T" onclick="javascript:location.href='https://lin-afu.github.io/question3.html'">
+        </div>
+		
+    </div>
 </body>
 </html>
