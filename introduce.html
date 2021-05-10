@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 
 <head>
@@ -7,22 +7,54 @@
     <title>使用科技產品照顧銀髮族之市場調查 </title>
 
     <style type="text/css">
-        button {
+		.wrap{
+			max-width: 100%;
+		}
+		.headline{
+			color: #ffffff;
+			top: 25%;
+			left: 7%;
+			position: absolute;
+			font-size: 4vw;
+		}
+		.page_circle{
+			max-height: 100%;  
+			max-width: 90%; 
+			min-width:90%;
+			width: 150vh;
+			height: 100vh;
+			position:fixed;
+			bottom:0%; 
+			right:0%;
+		}
+		.intro_text{ 
+			font-size: 2vw; 
+			font-weight:500;
+		}
+        .next_btn {
+			min-height:8vh;
+			min-width:15vh;
+			font-size: 2vw;
+			width: 10vw; 
+            height: 5vw;
+			right: 3vw;
+			bottom: 5vw;
+			position: absolute;
+			font-weight:600;
+			
             border: 0;
-            top: 615px;
-            width: 150px; 
-            height: 80px;
             background-color: #b3f5f3;
             color: #577b82;
-            border-radius: 10px;
             cursor: pointer;
             border-radius: 10%;
-            box-shadow : 10px 10px 10px #577b82;
+            box-shadow : 10px 1rem 1rem #577b82;
         }
-            button:hover {
-                top: 580px;
-                width: 150px; 
-                height: 150px;
+            .next_btn:hover {
+				min-height:10vh;
+				min-width:10vh;
+                bottom: 2.5vw;
+                width: 10vw; 
+                height: 10vw;
                 color: #b3f5f3;
                 background-color: #618786;
                 border-radius: 50%;
@@ -31,37 +63,30 @@
     </style>
 </head>
 
-<body style="background-color: #b3f5f3; width:500px; height:400px; overflow: hidden;">
-    <section id="headline">
-        <div class="container">
-            <div class="col-md-12"
-                style="color: #ffffff; top: 190px; left:100px; position: absolute; font-size: 60px; ">
+<body style="background-color: #b3f5f3;" >
+    <div class="wrapp">
+        <div class="headline" >
                 <b>介紹</b>
-            </div>
         </div>
-    </section>
-    <section id="one">
-        <div class="backgroung">
-            <img src="https://lin-afu.github.io/picture/page_circle.png" class="img-fluid" alt="start_circle" width="1300" height="1300"
-                 style=" position:absolute; top:0px; left:200px;">
-            <div class="intro_text" style="font-size: 35px; font-weight:500">
-                <div class="text1" style="color: #b3f5f3; top: 120px; left:620px; position: absolute; ">大家好，我們是東海大學的學生。</div>
-                <div class="text2" style="color: #577b82; top: 180px; left:660px; position: absolute; ">在資訊科技蓬勃發展的時代，</div>
-                <div class="text2" style="color: #577b82; top: 240px; left:460px; position: absolute; ">我們想知道市面上可以購買與下載的各式裝置與軟體</div>
-                <div class="text2" style="color: #577b82; top: 300px; left:620px; position: absolute; ">是否對照顧長輩有實質上的幫助。</div>
-                <div class="text3" style="color: #b3f5f3; top: 360px; left:480px; position: absolute; ">此問卷調查家屬、照顧者(看護)、被照顧者(長輩)</div>
-                <div class="text3" style="color: #b3f5f3; top: 420px; left:720px; position: absolute; ">之間相互照顧的模式，</div>
-                <div class="text3" style="color: #b3f5f3; top: 480px; left:580px; position: absolute; ">瞭解運用科技產品輔助實用性之高低。</div>
-                <div class="text4" style="color: #577b82; top: 540px; left:480px; position: absolute; ">採匿名方式，個人資料不會外流，敬請安心填答，</div>
-                <div class="text4" style="color: #577b82; top: 600px; left:760px; position: absolute; ">感謝您撥空填寫。</div>
-            </div>
-            <div class="next">
-                <button id="btn" name="button_next"
-                    style="font-size: 25pt; left: 1285px;  position: absolute;  font-weight:600" onclick="javascript:location.href='https://lin-afu.github.io/question1.html'">
-                    N E X T
-                </button>
-            </div>
+    
+		<img src="https://lin-afu.github.io/picture/page_circle.png" class="page_circle">
+            
+		<div class="intro_text" >
+            <div class="text1" style="color: #b3f5f3; top: 15%; left:40vw; position: absolute;">大家好，我們是東海大學的學生。</div>
+            <div class="text2" style="color: #577b82; top: 23%; left:42.2vw; position: absolute;">在資訊科技蓬勃發展的時代，</div>
+            <div class="text2" style="color: #577b82; top: 31%; left:31.2vw; position: absolute;">我們想知道市面上可以購買與下載的各式裝置與軟體</div>
+            <div class="text2" style="color: #577b82; top: 39%; left:40vw; position: absolute;">是否對照顧長輩有實質上的幫助。</div>
+            <div class="text3" style="color: #b3f5f3; top: 47%; left:33vw; position: absolute;">此問卷調查家屬、照顧者(看護)、被照顧者(長輩)</div>
+            <div class="text3" style="color: #b3f5f3; top: 55%; left:45.5vw; position: absolute;">之間相互照顧的模式，</div>
+            <div class="text3" style="color: #b3f5f3; top: 63%; left:37.8vw; position: absolute;">瞭解運用科技產品輔助實用性之高低。</div>
+            <div class="text4" style="color: #577b82; top: 71%; left:32.3vw; position: absolute;">採匿名方式，個人資料不會外流，敬請安心填答，</div>
+            <div class="text4" style="color: #577b82; top: 79%; left:47.7vw; position: absolute;">感謝您撥空填寫。</div>
         </div>
-    </section>
+		
+        <div>
+			<input type="button" class="next_btn" value="N E X T" onclick="javascript:location.href='https://lin-afu.github.io/question1.html'">
+        </div>
+    
+    </div>
 </body>
 </html>
